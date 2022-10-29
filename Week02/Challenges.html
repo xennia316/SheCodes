@@ -9,16 +9,13 @@
   <body>
     <h2>Week 2</h2>
     <script>
-      let hour = prompt("Entter current hour ...");
+      let country = prompt("What country are you from?");
+      let country2 = country.toUpperCase();
 
-      if (hour < 12) {
-        alert("Good mornung");
+      if (country2 === "PORTUGAL" || country2 === "BRASIL") {
+        alert("You speak portoguese");
       } else {
-        if (hour > 18) {
-          alert("Good evening");
-        } else {
-          alert("Good afternoon");
-        }
+        alert("You don't speak portoguese");
       }
     </script>
   </body>
