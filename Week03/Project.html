@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music with Zen🎼</title>
+  </head>
+  <style>
+    .container {
+      margin: auto;
+      padding: 3rem;
+      width: 40%;
+      height: 100%;
+      background: linear-gradient(#def5e5, #bcead5, #9ed5c5, #8ec3b0);
+      border-radius: 25px;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 500;
+      color: #1e1e1e;
+      line-height: 1.5;
+    }
+    img {
+      height: 450px;
+      width: 50%;
+      margin: auto;
+      border-radius: 25px;
+      max-width: 80%;
+    }
+    a {
+      color: #1e1e1e;
+      margin-top: 1rem;
+      text-decoration: none;
+    }
+    button {
+      margin: 2rem auto;
+      padding: 1rem;
+      border: 1px solid #1e1e1e;
+      background-color: #1e1e1e;
+      color: #bcead5;
+      border-radius: 25px;
+    }
+    button:hover {
+      color: #1e1e1e;
+      cursor: pointer;
+      animation: change 2s ease-in-out;
+      box-shadow: 2px 5px #888888;
+    }
+
+    @keyframes change {
+      0% {
+        background-color: #8ec3b0;
+        color: #1e1e1e;
+      }
+      50% {
+        background-color: #9ed5c5;
+      }
+      75% {
+        background-color: #def5e5;
+      }
+      100% {
+        background-color: #8ec3b0;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>I love Singing</h1>
+      <h2>Even though I hate the sound of my voice</h2>
+      <img src="./Zen.jpg" alt="Zendaya" />
+      <p>
+        I started singing when I was 7 and my greatest Star is Zendaya. With
+        her, it's not only about the music. Sh e boasts my confidence and makes
+        me feel stronger when I think of my flaws. Zendaya is not perfect and
+        that's what I love most about her. When she walks into a room, she fills
+        the atmosphere with her intinidating aura. Acting as though there's no
+        extent to which she could be more confident.
+      </p>
+      <hr />
+      <span
+        ><strong>I think Zendaya is the greatest musician ever!</strong></span
+      ><br />
+      <a
+        href="https://en.wikipedia.org/wiki/Zendaya"
+        target="_blank"
+        class="more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <div>
+        <button class="buy-button">👉 Register for concert</button>
+      </div>
+      <p class="footer">
+        <em>View more by</em>
+        <a href="https://github.com/xennia316" target="_blank">
+          <strong>Sonia A</strong>
+        </a>
+      </p>
+    </div>
+    <script>
+      let btn = document.querySelector("button");
+
+      function thanks() {
+        let choice = prompt("Who's your fav musician?");
+        if (choice.toUpperCase() === "ZENDAYA") {
+          alert("We have the same taste of music!");
+        } else {
+          alert("We do not share the same taste of music");
+        }
+      }
+      btn.addEventListener("click", thanks);
+    </script>
+  </body>
+</html>
